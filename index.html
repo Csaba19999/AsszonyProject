@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogi project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="cim">Hőátadó felület kalkulátor</h1>
+            <img id="hocsereloImg" src="shellandtube.gif" alt="hőcserelo">
+        </header>
+        <form>
+            <label for="">A csövek száma = n [ db ]</label>
+            <input id="csovekSz" type="number" required>
+            <label for="">A hosszúság = l [ m ]</label>
+            <input id="hossz" type="number" required>
+            <label for="">A cső átmérő = d [ m ]</label>
+            <input id="atmero" type="number" required>
+            <p id="keplet">A=n*l*d*π</p>
+            <input type="button" id="szamol" value="Számolás">
+        </form>
+        <article>
+            <h1>Eredmény : </h1>
+            <div id="eredmeny-div">
+                <h3 id="eredmeny-szam">Kérlek adj meg minden értéket</h3>
+            </div>
+        </article>
+        <footer>
+            <p>Készítette : Dohos Boglárka & Ménesi Csaba</p>
+            <p>@Minden jog fenntartva 2022</p>
+        </footer>
+    </main>
+</body>
+</html>

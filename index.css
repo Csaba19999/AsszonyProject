@@ -1,0 +1,73 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+}
+label,#keplet{
+    font-weight: lighter;
+    font-family: fantasy;
+    margin-bottom: 10px;
+}
+input{
+    border: none;
+    box-shadow: rgba(255, 0, 200, 0.363) 0px 2px 4px 0px, rgba(255, 0, 200, 0.363) 0px 2px 16px 0px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+#eredmeny-div{
+    box-shadow: rgba(255, 0, 200, 0.363) 0px 2px 4px 0px, rgba(255, 0, 200, 0.363) 0px 2px 16px 0px;
+    width: 100%;
+}
+#eredmeny-szam{
+    padding: 0px 30px;
+    text-align: center;
+    
+}
+#szamol{
+    padding: 10px 15px;
+    background-color: rgba(255, 0, 200, 0.76);
+    transition: background-color 500ms;
+    font-weight: lighter;
+    font-family: fantasy;
+    color: azure;
+}
+#szamol:hover{
+    transition: all;
+    transition: background-color 500ms;
+    padding: 10px 15px;
+    background-color: rgb(255, 149, 232);
+}
+#cim{
+    font-weight: lighter;
+    font-family: fantasy;
+    text-align: center;
+}
+main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "h h h"
+      "f f f"
+      "a a a"
+      "g g g";
+      justify-items: center;
+  }
+  header {
+    grid-area: h;
+  }
+  article{
+    grid-area: a;
+  }
+  form{
+    grid-area: f;
+  }
+  footer{
+    margin-top: 200px;
+    text-align: center;
+    grid-area: g;
+  }
